@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="js/jquery-3.6.4.js"></script>       
+        <script type="text/javascript" src="js/colorpicker.js"></script>      
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+		
+        <script>
+            $( function() {
+                $(document).tooltip();
+            } );
+        </script>
+		
+        <script type="text/javascript">      
+            $(document).ready(function()
+            {
+                $.ajax(
+                {
+                    type: "GET",
+                    url: "grille1_ects.xml",
+                    dataType: "xml",
+                    success: function(xml)
+                    {
+                        $(xml).find('bloc').each(function()
+                        {
+                            var idBloc = $(this).attr('id');
+                            $('<div class= bloc id="' + idBloc + '"></div>').html(idBloc).appendTo('#Div_XML');
+                            $(this).find('unite').each(function()
+                            {
+                                var libelle = $(this).attr('libelle');
+                                var idUnite = $(this).attr('id');
+                                var nbCredits = $(this).attr('credits');
+                                $('<ul id="' + idUnite + '" title="' + nbCredits + ' crédits"></ul>').html(libelle).appendTo('#' + idBloc);
+
+                                $("ul").dblclick(function(){
+                                    $(this).children().toggle();
+                                });
+
+                                $(this).find('aa').each(function()
+                                {
+                                    var intitule = $(this).attr('intitule'); 
+                                    $('<li></li>').html(intitule).appendTo('#' + idUnite);
+
+                                    $("li").hover(function(){
+                                        $(this).stop().filter(':not(:animated)').animate({marginLeft: '50px'}, 'slow');
+                                    }, function(){
+                                        $(this).stop().animate({marginLeft: '0px'}, 'slow');
+                                    });
+                                });
+                            });
+                        });
+                        $('ul').ColorPicker({onChange: function(hsb, hex, rgb) {
+                            $('ul').css('color', '#' + hex);                          
+                        }
+                        });
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+    <div id="Div_XML"></div>
+    </body>
+</html>

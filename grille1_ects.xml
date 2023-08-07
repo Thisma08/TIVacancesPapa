@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grille>
+<bloc id="1B">
+<unite id="UE102" libelle="Langues étrangères"  VolHor="60" credits="4" quadri="Q1/Q2"> 
+<aa intitule="Langues etrangeres"></aa>
+</unite>
+<unite id="UE103" libelle="Principes et langages de programmation 1"  VolHor="120" credits="11" quadri="Q1"> 
+<aa intitule="Methodes et principes de programmation 1"></aa>
+<aa intitule="Langage et programmation procedural"></aa>
+</unite>
+<unite id="UE104" libelle="Architecture et systemes 1"  VolHor="60" credits="5" quadri="Q1/Q2"> 
+<aa intitule="Architecture technique et materiel informatique"></aa>
+<aa intitule="Fichiers et bases de donnees"></aa>
+</unite>
+<unite id="UE105" libelle="Developpement 1"  VolHor="48" credits="4" quadri="Q1"> 
+<aa intitule="Principe de programmation orientee objet" ></aa>
+<aa intitule="Programmation orientee objet" ></aa>
+</unite>
+<unite id="UE107" libelle="Fichiers et base de données 1"  VolHor="24" credits="1" quadri="Q2"> 
+<aa intitule="Fichiers et bases de donnees"></aa> 
+</unite>
+<unite id="UE108" libelle="Principes et langages de programmation 2"  VolHor="24" credits="2" quadri="Q2"> 
+<aa intitule="Methodes et principes de programmation"></aa>
+</unite>
+<unite id="UE109" libelle="Developpement 2"  VolHor="60" credits="5" quadri="Q2"> 
+<aa intitule="POO" code="ECIG1B08A"></aa>
+</unite>
+<unite id="UE110" libelle="Techno Internet 1"  VolHor="72" credits="5" quadri="Q2"> 
+<aa intitule="Technologies Internet"></aa> 
+<aa intitule="Fichiers et bases de donnees"></aa>
+</unite>
+<unite id="UE111" libelle="Langage de programmation procédural 2"  VolHor="36" credits="5" quadri="Q2"> 
+<aa intitule="Langage de programmation procédural 2"></aa>
+</unite>
+<unite id="UE112" libelle="Projet"  VolHor="60" credits="5" quadri="Q1/Q2"> 
+<aa intitule="Ateliers logiciels"></aa> 
+<aa intitule="Projet"></aa>
+</unite>
+<unite id="UE114" libelle="Gestion 1A"  VolHor="48" credits="4" quadri="Q1"> 
+<aa intitule="Compta 1A"></aa>
+</unite>
+<unite id="UE115" libelle="Gestion 1B"  VolHor="24" credits="2" quadri="Q1"> 
+<aa intitule="Compta 1A"></aa>
+</unite>
+<unite id="UE116" libelle="Math 1"  VolHor="24" credits="2" quadri="Q1"> 
+<aa intitule="Math 1"></aa>
+</unite>
+<unite id="UE117" libelle="Mathématique 2 et Traitement de données 1"  VolHor="48" credits="4" quadri="Q2"> 
+<aa intitule=" Traitement de données 1"></aa> 
+<aa intitule=" Mathématique 2"></aa>
+</unite>
+</bloc>
+</grille>
